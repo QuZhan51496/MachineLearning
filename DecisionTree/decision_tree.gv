@@ -1,0 +1,24 @@
+digraph decision_tree {
+fontname="Microsoft YaHei"; labelloc=t; labeljust=l; rankdir=TB;
+node[fontname="Microsoft YaHei",color=darkgreen,shape=ellipse];
+edge[fontname="Microsoft YaHei",color=darkgreen,style=solid,arrowsize=0.7];
+0[label="脐部=？"];
+1[label="YES=？"];
+0:s->1[label=凹陷];
+2[label="根蒂=？"];
+0:s->2[label=稍凹];
+3[label="NO=？"];
+2:s->3[label=蜷缩];
+4[label="色泽=？"];
+2:s->4[label=稍蜷];
+5[label="YES=？"];
+4:s->5[label=青绿];
+6[label="NO=？"];
+4:s->6[label=乌黑];
+7[label="YES=？"];
+4:s->7[label=浅白];
+8[label="YES=？"];
+2:s->8[label=硬挺];
+9[label="NO=？"];
+0:s->9[label=平坦];
+}

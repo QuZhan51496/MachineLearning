@@ -1,0 +1,1 @@
+dot.exe -Tpng decision_tree.gv -o decision_tree.png
